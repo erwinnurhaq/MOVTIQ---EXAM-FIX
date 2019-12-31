@@ -1,0 +1,76 @@
+.registration-container{
+    @include flex(row, flex-end, center);
+    width: 100%;
+    height: 100vh;
+    .regsuccess-wrapper{
+        @include flex(column, center, flex-start);
+        padding-left: 10%;
+        transform: translateY(-50%);
+        &.hidden{
+            display: none;
+        }
+        h1{
+            font-size: 36px;
+            font-weight: 700;
+            color: $colorTwo;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 300;
+            color: $colorLight;
+        }
+    }
+
+    .form-wrapper{
+        @include flex(column, center, flex-end);
+        padding: 0px 10%;
+        .form-title{
+            font-size: 48px;
+            color: $colorTwo;
+        }
+        .form-input{
+            width: 500px;
+            div{
+                label{
+                    color: lightgray;
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+                div{
+                    &::before{
+                        border-color:$colorLight;
+                    }
+                    &::after{
+                        border-color: $colorTwo;
+                    }
+                    input{
+                        color: $colorTwo;
+                    }
+                }
+            }
+            .text-check-valid{
+                @include flex(column, center, flex-end);
+                padding: 20px 0px 20px 0px;
+                div{
+                    font-size: 12px;
+                    font-style: italic;
+                    color: lightgray
+                }
+            }
+        }
+    }
+    .button-container{
+        button{
+            background-color: $colorOne;
+            color: $colorLight;
+            font-weight: 300;
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            &:hover{
+                background-color: $colorTwo;
+                color: $colorDark;
+              }
+        }
+    }
+}

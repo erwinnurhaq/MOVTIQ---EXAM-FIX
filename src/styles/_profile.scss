@@ -1,0 +1,79 @@
+.profile-container{
+    height: 85vh;
+    width: 100%;
+    padding: 0px 5%;
+    position: relative;
+    .profile-wrapper{
+        background-color: rgba(255, 255, 255, 0.1);
+        position: fixed;
+        width: 65%;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include flex(row, space-between, center);
+        .biodata-container{
+            @include flex(column, flex-start, flex-start);
+            padding-left: 50px;
+            .biodata-item{
+                @include flex(row, flex-start, flex-start);
+                padding: 7.5px 0px;
+                width: 100%;
+                color: $colorLight;
+                .title{
+                    width: 30%;
+                    font-weight: 300;
+                }
+                .value{
+                    padding-left: 5px;
+                }
+            }
+            .btn-container{
+                margin-top: 25px;
+                button{
+                    width: 200px;
+                    height: 50px;
+                }
+                .btn-changepass{
+                    border-color: $colorOne;
+                    color: $colorOne;
+                    margin-right: 15px;
+                }
+            }
+        }
+        .img-container{
+            @include flex(column, flex-start, flex-end);
+            height: 100%;
+            img{
+                height: 100%;
+            }
+            button{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 40px;
+                width: 180px;
+                svg{
+                    margin-left: 10px;
+                }
+                &:hover{
+                    color: $colorTwo;
+                }
+            }
+        }
+    }
+    .white-side{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+        width: 45vw;
+        height: 100%;
+        border-bottom: 100vh solid $colorLight;
+        border-left: 15vw solid transparent;
+    }
+}
+.text-check-valid{
+    padding-top: 20px;
+    font-size: 0.7rem;
+}

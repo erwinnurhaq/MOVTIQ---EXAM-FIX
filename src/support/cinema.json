@@ -1,0 +1,455 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "admin",
+      "last_name": "admin",
+      "email": "admin@gmail.com",
+      "username": "admin",
+      "password": "admin",
+      "role": "admin",
+      "cart": []
+    },
+    {
+      "id": 2,
+      "first_name": "Robert",
+      "last_name": "Schwartz",
+      "email": "rob23@gmail.com",
+      "username": "robert_schwartz",
+      "password": "robert_schwartz",
+      "role": "user",
+      "cart": []
+    },
+    {
+      "id": 3,
+      "first_name": "Lucy",
+      "last_name": "Ballmer",
+      "email": "lucyb56@gmail.com",
+      "username": "lucy_ballmer",
+      "password": "lucy_ballmer",
+      "role": "user",
+      "cart": []
+    },
+    {
+      "id": 4,
+      "first_name": "Anna",
+      "last_name": "Smith",
+      "email": "annasmith23@gmail.com",
+      "username": "anna_smith",
+      "password": "anna_smith",
+      "role": "user",
+      "cart": []
+    },
+    {
+      "id": 5,
+      "first_name": "Robert",
+      "last_name": "Brown",
+      "email": "bobbrown432@yahoo.com",
+      "username": "robert_brown",
+      "password": "robert_brown",
+      "role": "user",
+      "cart": []
+    },
+    {
+      "id": 6,
+      "first_name": "Roger",
+      "last_name": "Bacon",
+      "email": "rogerbacon12@yahoo.com",
+      "username": "roger_bacon",
+      "password": "roger_bacon",
+      "role": "user",
+      "cart": []
+    },
+    {
+      "first_name": "Erwin",
+      "last_name": "Nurhaq",
+      "email": "enurhaq@gmail.com",
+      "id": 7,
+      "username": "erwin",
+      "password": "erwin",
+      "role": "user",
+      "cart": []
+    },
+    {
+      "first_name": "udin",
+      "last_name": "ujang",
+      "email": "udinujang@gmail.com",
+      "username": "udinujang",
+      "password": "Udinujang1",
+      "role": "user",
+      "cart": [],
+      "id": 8
+    },
+    {
+      "first_name": "Jojo",
+      "last_name": "",
+      "email": "jojo@jojo.com",
+      "username": "jojojojo",
+      "password": "Jojo1234",
+      "role": "user",
+      "cart": [],
+      "id": 9
+    },
+    {
+      "first_name": "lolicon",
+      "last_name": "",
+      "email": "lolicon69@gmail.com",
+      "username": "lolicon6969",
+      "password": "Lolicon6969",
+      "role": "user",
+      "cart": [],
+      "id": 10
+    },
+    {
+      "first_name": "ishtar",
+      "last_name": "sama",
+      "email": "ishtar@sama.com",
+      "username": "ishtarsama",
+      "password": "Asdf1234",
+      "role": "user",
+      "cart": [],
+      "id": 11
+    }
+  ],
+  "transactions": [
+    {
+      "username": "erwin",
+      "userId": 7,
+      "date": "2019/11/19",
+      "hours": 14,
+      "minutes": 38,
+      "ticketAmount": 2,
+      "totalPrice": 250000,
+      "transactionDetail": [
+        {
+          "title": "Jumanji: The Next Level",
+          "sumPrice": 100000,
+          "seats": [
+            [
+              2,
+              16
+            ],
+            [
+              2,
+              15
+            ]
+          ],
+          "seatAmount": 2
+        },
+        {
+          "title": "The Good Liar",
+          "sumPrice": 150000,
+          "seats": [
+            [
+              2,
+              16
+            ],
+            [
+              2,
+              15
+            ],
+            [
+              2,
+              14
+            ]
+          ],
+          "seatAmount": 3
+        }
+      ],
+      "id": 1
+    },
+    {
+      "username": "erwin",
+      "userId": 7,
+      "date": "2019/11/19",
+      "hours": 14,
+      "minutes": 39,
+      "ticketAmount": 1,
+      "totalPrice": 100000,
+      "transactionDetail": [
+        {
+          "title": "Trinity Traveler",
+          "sumPrice": 100000,
+          "seats": [
+            [
+              2,
+              16
+            ],
+            [
+              2,
+              15
+            ]
+          ],
+          "seatAmount": 2
+        }
+      ],
+      "id": 2
+    },
+    {
+      "username": "ishtarsama",
+      "userId": 11,
+      "date": "2019/11/19",
+      "hours": 16,
+      "minutes": 16,
+      "ticketAmount": 3,
+      "totalPrice": 250000,
+      "transactionDetail": [
+        {
+          "title": "Jumanji: The Next Level",
+          "sumPrice": 100000,
+          "seats": [
+            [
+              3,
+              16
+            ],
+            [
+              3,
+              15
+            ]
+          ],
+          "seatAmount": 2
+        },
+        {
+          "title": "The Good Liar",
+          "sumPrice": 100000,
+          "seats": [
+            [
+              3,
+              16
+            ],
+            [
+              3,
+              15
+            ]
+          ],
+          "seatAmount": 2
+        },
+        {
+          "title": "Trinity Traveler",
+          "sumPrice": 50000,
+          "seats": [
+            [
+              2,
+              14
+            ]
+          ],
+          "seatAmount": 1
+        }
+      ],
+      "id": 3
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "name": "Jumanji: The Next Level",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "director": "Matt Tolmach",
+      "duration": 123,
+      "synopsis": "Dwayne Johnson, Karen Gillan, Jack Black dan Kevin Hart kembali ke Jumanji, keempatnya harus menyelamatkan salah satu teman mereka. Namun permainan telah berubah. Para pemain kini harus lebih berani melintasi rintangan ekstrem dan kembali dengan selamat dari permainan paling berbahaya di dunia.",
+      "casts": [
+        "Dwayne Johnson",
+        "Karen Gilian",
+        "Jack Black"
+      ],
+      "booked": [
+        [
+          2,
+          16
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          3,
+          15
+        ]
+      ],
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/157380448937451_287x421.jpg",
+      "bg": "https://a.imge.to/2019/12/16/vMRAJO.jpg",
+      "trailer": "https://www.youtube.com/embed/rBxcF-r9Ibs"
+    },
+    {
+      "id": 2,
+      "name": "The Good Liar",
+      "genre": [
+        "Drama"
+      ],
+      "director": "Bill Condon",
+      "duration": 108,
+      "synopsis": "Berawal dari perkenalan di situs kencan daring, Roy (Ian McKellen) seorang penipu ulung berhasil mendekati Betty, janda kaya raya dengan harta melimpah. Tapi hubungan keduanya mendapat respon keras dari keluarga Betty, yang menduga Roy punya niat jahat. Saat memulai misinya ternyata Roy justru jatuh cinta kepada Betty. Roy yang awalnya bisa menjalankan misinya dengan mudah, justru harus melalui melewati jalan yang bisa membahayakan dirinya.",
+      "casts": [
+        "Helen Mirren",
+        "Ian McKellen",
+        "Russel Tovey"
+      ],
+      "booked": [
+        [
+          2,
+          16
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          3,
+          15
+        ]
+      ],
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/157423720057093_287x421.jpg",
+      "bg": "https://b.imge.to/2019/12/16/vMR6Q6.jpg",
+      "trailer": "https://www.youtube.com/embed/ljKzFGpPHhw"
+    },
+    {
+      "id": 3,
+      "name": "Trinity Traveler",
+      "genre": [
+        "Drama"
+      ],
+      "director": "Rizal Mantovani",
+      "duration": 97,
+      "synopsis": "Trinity (Maudy Ayunda) menerbitkan buku pertamanya dan menjadi bestseller. Sekarang dia lebih dikenal sebagai TRINITY TRAVELER dan dapat beasiswa S2 di Filipina sambil tetap menjalani hobby traveling-nya. Bapak (Farhan) dan Ibu (Cut Mini) selalu mendesaknya segera menikah, karena menurut mereka dengan menikah Trinity akan lebih bahagia. Trinity kembali bertemu dengan Paul (Hamish Daud) tapi menghadapi dilema antara mengejar cinta dan passion-nya.",
+      "casts": [
+        "Maudy Ayunda",
+        "Hamish Daud",
+        "Rachel Amanda"
+      ],
+      "booked": [
+        [
+          2,
+          16
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          2,
+          14
+        ]
+      ],
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/157138861225634_287x421.jpg",
+      "bg": "https://c.imge.to/2019/12/16/vMRlW1.jpg",
+      "trailer": "https://www.youtube.com/embed/JULU9daSUyw"
+    },
+    {
+      "id": 4,
+      "name": "Sang Perwira",
+      "genre": [
+        "Drama",
+        "Action"
+      ],
+      "director": "Ponti Gea",
+      "duration": 118,
+      "synopsis": "HORAS (IPDA Dimas Adit S), seorang pemuda yang lahir di sebuah kampung di tepian Danau Toba, bercita-cita menjadi polisi. Keinginannya tersebut sempat ditentang oleh ayahnya lantaran ayahnya ingin Horas menjadi pengusaha sukes agar bisa merubah status sosial keluarga Horas dari ekonomi bawah menjadi strata menengah ke atas. Mampukah Horas mewujudkan cita-citanya? Cerita makin menarik dengan kisah cinta Horas dan Nauli (Anggika Bolsterli) yang romantis dan rumit.",
+      "casts": [
+        "Ipda Aditia ACP",
+        "Anggika Bolsterli",
+        "Ipda Dimas Adit S"
+      ],
+      "booked": [],
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/157379161737188_287x421.jpg",
+      "bg": "https://a.imge.to/2019/12/16/vMR8h4.jpg",
+      "trailer": "https://www.youtube.com/embed/2RGEZZ_ubPo"
+    },
+    {
+      "id": 5,
+      "name": "Nightmare Side Delusional",
+      "genre": [
+        "Drama",
+        "Horror"
+      ],
+      "director": "Joel Fadly",
+      "duration": 100,
+      "synopsis": "Naya (Fay Nabila) adalah siswi baru di salah satu SMA di Bandung. Naya memiliki kemampuan yang dikenal sebagai anak indigo. Di sekolah barunya, Naya bertemu dengan Shelly (Gege Elisa) yang memiliki kemampuan sama. Namun, sifat Shelly yang tertutup membuat Naya penasaran. Di saat yang sama, Naya juga dibuat penasaran oleh siaran radio Nightmare Side yang didengarnya dan selalu diikuti oleh mimpi buruk seolah kejadian itu nyata.",
+      "casts": [
+        "Gege Elisa",
+        "Elina Joerg",
+        "Fay Nabila"
+      ],
+      "booked": [],
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/157310760872775_287x421.jpg",
+      "bg": "https://c.imge.to/2019/12/16/vMRQrq.jpg",
+      "trailer": "https://www.youtube.com/embed/Yhea04sWHKc"
+    },
+    {
+      "id": 6,
+      "name": "Frozen II",
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "director": "Chris Buck",
+      "duration": 103,
+      "synopsis": "Anna, Elsa, Kristoff, Olaf dan Sven pergi meninggalkan Arendelle untuk melakukan perjalanan ke sebuah tempat asing dan penuh keajaiban. Mereka berangkat untuk menemukan asal usul kekuatan Elsa dan juga untuk menyelamatkan kerajaan mereka.",
+      "casts": [
+        "Kristen Bell",
+        "Idina Menzel",
+        "Jonathan Groff"
+      ],
+      "booked": [],
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/157250534676979_287x421.jpg",
+      "bg": "https://c.imge.to/2019/12/16/vMRM4r.jpg",
+      "trailer": "https://www.youtube.com/embed/Zi4LMpSDccc"
+    },
+    {
+      "name": "Primal",
+      "genre": [
+        "Action"
+      ],
+      "director": "Nick Powell",
+      "duration": 96,
+      "synopsis": "Frank Walsh (Nicolas Cage) adalah seorang spesialis pemburu binatang liar. Hewan-hewan buruannya dikenal langka dan sangat berbahaya. Hasil tangkapan Frank akan dijual kepada penawar tertinggi. Masalah bermula saat kapal yang membawa Frank menuju AS ditumpangi oleh seorang pembunuh bayaran profesional. Dalam perjalanan menuju AS, sang pembunuh berhasil lolos dan melepaskan semua buruan Frank dan membuat kekacauan di dalam kapal.",
+      "casts": [
+        "Nicolas Cage",
+        "Famke Jansenn",
+        "Kevin Durand"
+      ],
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/15743294977296_287x421.jpg",
+      "bg": "https://c.imge.to/2019/12/16/vMRk7x.jpg",
+      "booked": [],
+      "id": 7,
+      "trailer": "https://www.youtube.com/embed/0-thtQJWQBo"
+    },
+    {
+      "id": 8,
+      "name": "Ford V Ferrari",
+      "genre": [
+        "Action",
+        "Biography",
+        "Drama"
+      ],
+      "director": "James Mangold",
+      "duration": 152,
+      "synopsis": "2 pemenang Academy Award, Matt Damon dan Christian Bale berperan di FORD v FERRARI, berdasarkan kisah nyata yang luar biasa dari Carroll Shelby (Damon), seorang perancang mobil visioner dari Amerika bersama Ken Miles (Bale), seorang pembalap Inggris yang tak kenal takut. Mereka bersama-sama berjuang menghadapi campur tangan perusahaan, hukum fisika, dan masalah pribadi mereka sendiri ketika membangun mobil balap revolusioner bagi Ford Motor Company untuk menantang mobil balap buatan Enzo Ferrari yang mendomniasi 24 Jam Le Mans di Perancis pada tahun 1966.",
+      "casts": [
+        "Matt Damon",
+        "Christian Bale",
+        "Jon Bernthal"
+      ],
+      "booked": [],
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/1572858859730_287x421.jpg",
+      "bg": "https://c.imge.to/2019/12/16/vMRzF0.jpg",
+      "trailer": "https://www.youtube.com/embed/zyYgDtY2AMY"
+    }
+  ]
+}

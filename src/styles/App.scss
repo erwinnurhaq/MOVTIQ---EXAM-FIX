@@ -1,0 +1,26 @@
+@import './variables';
+@import './component_navbar';
+@import './component_login';
+@import './component_footer';
+@import './home';
+@import './movieManagement';
+@import './transactionHistory';
+@import './warningPage';
+@import './registration';
+@import './movie';
+@import './seatReservation';
+@import './userTickets';
+@import './profile';
+
+*, ::before, ::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+button{
+  border-radius: 0px !important;
+}

@@ -1,0 +1,39 @@
+.movie-marquee-container{
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    overflow-x: hidden;
+    display: flex;
+    .movie-marquee-wrapper{
+        @include flex(row, center, center);
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 20s linear infinite;
+        .movie-card{
+            border-radius: 0px;
+            border-left: 1px solid $colorLight;
+            border-top: 10px solid $colorLight;
+            border-bottom: 10px solid $colorLight;
+            // margin: 10px;
+            .genre-container{
+                @include flex(row, center, center);
+                background-color:$colorDark;
+                padding: 10px;
+                div{
+                    padding:0px 5px;
+                    font-size: 14px;
+                    color: $colorLight;
+                }
+            }
+
+        }
+    }
+}
+
+/* Make it move */
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }

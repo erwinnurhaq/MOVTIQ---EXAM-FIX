@@ -1,0 +1,82 @@
+@import './component_mov_marquee';
+
+.home-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .white-side{
+        width: 55%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        border-bottom: 100vh solid $colorLight;
+        border-left: 20vw solid transparent;
+    }
+    .home-content{
+        width: 100%;
+        max-width: 1920px;
+        height: 100%;
+        margin: auto;
+        position: relative;
+        .title1{
+            @include flex(row, center, center);
+            cursor: pointer;
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 74%;
+            transform: translate(-50%, -50%);
+            .text1{
+                @include flex(column, center, flex-end);
+                p{
+                    font-size: 36px;
+                    font-weight: 300;
+                    color: $colorDark;
+                }
+                h1{
+                    font-size: 115px;
+                    font-weight: 700;
+                    color: $colorDark;
+                }
+            }
+            .text2{
+                color: $colorOne;
+                font-size: 240px;
+                font-weight: 900;
+                transform: translateY(-10px);
+                padding-left: 5px;
+                transition: all 0.5s ease;
+                
+            }
+            .text3{
+                color: $colorOne;
+                font-size: 240px;
+                font-weight: 300;
+                transform: translateY(-10px);
+                padding-left: 5px;
+                transition: all 0.5s ease;
+
+            }
+            &:hover .text2, &:hover .text3{
+                color: $colorTwo;
+            }
+        }
+        .title2{
+            width: 100%;
+            height: 100%;
+            .text1{
+                @include flex(row, center, center);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-25%, -280px);
+                font-size: 28px;
+                font-weight: 100;
+                color: $colorTwo;
+            }
+        }
+    }
+}

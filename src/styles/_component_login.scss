@@ -1,0 +1,84 @@
+.login-container{
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  width: 280px;
+  // height: 230px;
+  top:7vh;
+  right: 5%;
+  &.show{
+    display: block;
+    pointer-events: all;
+
+  }
+  .form-background{
+    width: 100%;
+    height: 100%;
+    position: inherit;
+  }
+  .form-container{
+    background-color: $colorDark;
+    border: 1px solid $colorOne;
+    width: 100%;
+    height: 100%;
+    .login-wrapper{
+      width: 100%;
+      .form-input{
+        padding: 10px 25px;
+        div{
+          label{
+            color: lightgray;
+            font-weight: 300;
+            font-size: 0.8rem;
+          }
+          div{
+              &::before{
+                  border-color:$colorLight;
+              }
+              &::after{
+                  border-color: $colorTwo;
+              }
+              input{
+                  color: $colorTwo;
+                  font-size: 0.9rem;
+              }
+          }
+        }
+      }
+      .form-action-group{
+        @include flex(column,center,center);
+        width: 100%;
+        padding-top: 20px;
+        button{
+          background-color: $colorOne;
+          box-shadow: none;
+          color: $colorLight;
+          width: 100%;
+          height: 36px;
+          &:hover{
+            background-color: $colorTwo;
+            color: $colorDark;
+          }
+        }
+        p{
+          font-size: 0.7rem;
+          width: 100%;
+          padding: 5px 0px;
+          text-align: center;
+          background-color: $colorOne;
+          .reg-link{
+            text-decoration: none;
+            font-weight: bold;
+            color: $colorLight;
+            transition: all 0.4s ease;
+            &:hover{
+              font-size: 0.9rem;
+              color: $colorTwo;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+  

@@ -1,0 +1,130 @@
+.navbar-container{
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px $colorDark;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 7vh;
+    max-height: 75px;
+    color: $colorLight;
+    position: fixed;
+    top: 0;
+    transition: all 0.6s ease;
+    z-index: 2;
+    &.bg-change{
+        color: $colorLight;
+        background-color: rgba(34, 34, 34, 0.95);
+        box-shadow: 0px 0px 10px $colorTwo;
+        max-height: 60px;
+    }
+    .navbar-content{
+        @include flex(row, space-between, center);
+        width: 100%;
+        max-width: 1920px;
+        height: 100%;
+        padding: 0px 5%;
+        margin: auto;
+        .nav-left-container{
+            @include flex(row, flex-start, center);
+            flex:1;
+            height: 100%;
+            padding: 1vh 0px;
+            img{
+                height: 100%;
+            }
+        }
+        .nav-middle-container{
+            flex: 1;
+            height: 100%;
+            ul{
+                @include flex(row, center, center);
+                width: 100%;
+                height: 100%;
+                list-style: none;
+                li{
+                    @include flex(row, center, center);
+                    overflow: hidden;
+                    position: relative;
+                    height: 100%;
+                    a{
+                        text-decoration: none;
+                        color: $colorLight;
+                        padding: 100% 30px;
+                        font-size: 0.9rem;
+                        font-weight: 300;
+                        text-shadow: 0px 0px 40px $colorDark;
+                        transition: all 0.5s ease-in-out;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 150px;
+                            height: 1px;
+                            background-color: $colorTwo;
+                            bottom: 0;
+                            left: 0;
+                            transform: translateX(-100%);
+                        }
+                        &:hover, &:focus{
+                            color: $colorTwo;
+                            text-shadow: 0px 0px 10px $colorTwo;
+                            &::before{
+                                transform: translateX(0%);
+                                transition: all 0.8s ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .nav-right-container{
+            @include flex(row, flex-end, center);
+            height: 100%;
+            flex: 1;
+            .user-menu{
+                button{
+                    @include flex(row, center, center);
+                    height: 36px;
+                    color: $colorOne;
+                    margin-left: 15px;
+                    .username{
+                        font-size: 0.9rem;
+                        font-weight: 300;
+                        padding-right: 10px;
+                        transform: translateY(1px);
+                    }
+                }
+                div{
+                    border-radius: 0px;
+                    ul{
+                        background-color: $colorDark;
+                        li{
+                            color: $colorLight;
+                            font-size: 0.8rem;
+                            font-weight: 300;
+                            padding-right: 25px;
+                            &:hover{
+                                color: $colorDark;
+                                background-color: $colorTwo;
+                            }
+                            svg{
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-login{
+                background-color: $colorOne;
+                color: $colorLight;
+                width: 100px;
+                height: 36px;
+                &:hover{
+                    background-color: $colorTwo;
+                    color: $colorDark;
+                }
+                &.hidden{
+                    display: none;
+                }
+            }
+        }
+    }
+}
