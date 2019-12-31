@@ -1,11 +1,7 @@
 .movie-management-container{
-    height: 85vh;
-    width: 100%;
     .movie-management-wrapper{
         padding: 0px 5%;
-        height: 100%;
-        margin: 7.5vh 0px;
-        overflow-y: auto;
+        margin: 7.5vh 0px 10vh 0px;
         .movie-manager{
             .title1{
                 @include flex(row, space-between, flex-end);
@@ -31,6 +27,7 @@
             }
             .table-content{
                 background-color: white;
+                width: 100%;
                 @include flex(column, center, center);
                 table{
                     color: $colorDark;

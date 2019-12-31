@@ -2,14 +2,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Card, CardActionArea, CardMedia } from '@material-ui/core';
 
-//redux
-import { useSelector } from 'react-redux';
 
+function MoviesCard(props) {
 
-
-function MoviesCard({ cardClicked, setCardClicked, selected, setSelected }) {
-
-    const movies = useSelector(state => state.movieData.movies)
+    const { cardClicked, setCardClicked, selected, setSelected, movies } = props;
 
     const handleSelect = (id) => {
         if (cardClicked && selected === id) {
@@ -32,12 +28,10 @@ function MoviesCard({ cardClicked, setCardClicked, selected, setSelected }) {
             width: '100%',
         },
     });
-
     const classes = useStyles();
 
-
     return (
-        <div className={`movie-card-container ${selected !== null ? 'slide' : ''}`}>
+        <div className={`movie-card-container ${selected !== null ? 'slide' : null}`}>
             {movies.map(movie => (
                 <Card
                     className={`movie-card ${selected === movie.id ? 'active' : null}`}

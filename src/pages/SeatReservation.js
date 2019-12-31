@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/App.scss';
 import Axios from 'axios';
 import { useParams, Link } from 'react-router-dom'
 import { API_URL } from '../support/API_URL';
@@ -15,7 +14,6 @@ import { getLocal } from '../redux/allAction';
 //components
 import ModalSuccessCart from '../components/ModalSuccessCart';
 import ModalWarning from '../components/ModalWarning';
-import Footer from '../components/Footer';
 
 
 
@@ -255,9 +253,9 @@ const SeatReservation = () => {
                 </div>
                 <div className="seat-reservation-content">
                     <div className="top-container">
+                        <Button onClick={() => setState(initialState)}><RefreshIcon />REFRESH</Button>
                         <div className="info1"><EventSeatIcon color='inherit' /><div>AVAILABLE</div></div>
                         <h1>PICK YOUR SEATS!</h1>
-                        <Button onClick={() => setState(initialState)}><RefreshIcon />REFRESH</Button>
                     </div>
                     <div className="seat-container">
                         <div className="movie-desc">
@@ -282,7 +280,6 @@ const SeatReservation = () => {
                         </div>
                     </div>
                 </div >
-                <Footer />
                 <ModalSuccessCart
                     userId={user.id}
                     modalSuccessCart={modalSuccessCart}

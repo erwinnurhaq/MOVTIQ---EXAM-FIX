@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { withRouter, useParams } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 
@@ -7,7 +7,6 @@ import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import { useSelector } from 'react-redux';
 
 //components
-import Footer from '../components/Footer';
 import ModalChangePass from '../components/ModalChangePass';
 import ModalWarning from '../components/ModalWarning';
 
@@ -60,7 +59,6 @@ function Profile(props) {
                         </Button>
                     </div>
                 </div>
-                <Footer />
                 <div className='white-side'></div>
                 <ModalChangePass
                     user={user}

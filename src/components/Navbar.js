@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 
 import { fade, makeStyles } from '@material-ui/core/styles';
-import { InputBase, Button, ClickAwayListener, Grow, Paper, Popper, MenuItem, MenuList, TextField, Fade, Typography } from '@material-ui/core';
+import { InputBase, Button, ClickAwayListener, Grow, Paper, Popper, MenuItem, MenuList } from '@material-ui/core';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import SearchIcon from '@material-ui/icons/Search';
 import TheatersIcon from '@material-ui/icons/Theaters';
@@ -16,7 +16,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 //components
 import LoginComponent from './LoginForm';
-import { loginAct, logoutAct } from '../redux/allAction';
+import { logoutAct } from '../redux/allAction';
 
 
 const useStyles = makeStyles(theme => ({
@@ -75,22 +75,6 @@ function Navbar(props) {
     const isLogin = useSelector(state => state.userData.isLogin);
     const dispatch = useDispatch();
 
-    let selected = user.id;
-
-    const [inputUser, setInputUser] = useState({ username: '', password: '' });
-
-    // login button function
-    const loginHandler = (e) => {
-        e.preventDefault();
-        if (inputUser.username && inputUser.password) {
-            dispatch(loginAct(inputUser));
-            setInputUser({ username: '', password: '' }); //clear form
-            // props.setClick({ initial: false, clicked: null }); //set clicked null
-            props.history.push('/')
-        } else {
-            alert('Please fill the form!')
-        }
-    }
 
     //clicked status login btn form
     const [click, setClick] = useState({ initial: false, clicked: null });
@@ -116,7 +100,7 @@ function Navbar(props) {
     const [invertBg, setInvertBg] = useState(false);
 
     const bgNavChanger = () => {
-        if (window.scrollY > window.innerHeight / 8) {
+        if (window.scrollY > window.innerHeight / 20) {
             setInvertBg(true);
         } else {
             setInvertBg(false)
@@ -226,10 +210,10 @@ function Navbar(props) {
                 </div>
                 <div className="nav-middle-container">
                     <ul>
-                        <li><Link to="/">HOME</Link></li>
-                        <li><Link to="/movies">MOVIES</Link></li>
-                        <li><Link to="/warningdev">CINEMAS</Link></li>
-                        <li><Link to="/warningdev">MEMBERSHIP</Link></li>
+                        <li><NavLink to="/" exact>HOME</NavLink></li>
+                        <li><NavLink to="/movies">MOVIES</NavLink></li>
+                        <li><NavLink to="/cinemas">CINEMAS</NavLink></li>
+                        <li><NavLink to="/membership">MEMBERSHIP</NavLink></li>
                     </ul>
                 </div >
                 <div className="nav-right-container">
@@ -246,12 +230,12 @@ function Navbar(props) {
                             inputProps={{ 'aria-label': 'search' }}
                         />
                     </div>
-                    <Button className={`btn-login ${isLogin ? "hidden" : null}`} onClick={handleClickLoginForm} variant="contained">LOGIN</Button>
+                    <Button ref={anchorRef} className={`btn-login ${isLogin ? "hidden" : null}`} onClick={handleClickLoginForm} variant="contained">LOGIN</Button>
 
                     {isLogin && user.role === 'user' ? userMenu() : isLogin && user.role === 'admin' ? adminMenu() : null}
                 </div>
             </div>
-            <LoginComponent click={click} setClick={setClick} />
+            <LoginComponent anchorRef={anchorRef} click={click} setClick={setClick} />
         </div>
     )
 }

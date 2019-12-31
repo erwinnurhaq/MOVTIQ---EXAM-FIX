@@ -1,26 +1,21 @@
 .movie-card-container{
-    @include flex(row, center, center);
-    width: 64%;
-    height: 85vh;
+    @include flex(row, center, flex-start);
+    width: 100%;
+    min-height: 100vh;
+    padding: 7.5vh 20vw 10vh 20vw;
     transition: all 0.8s ease;
     flex-wrap: wrap;
-    overflow: auto;
     &.slide{
-        width: 64%;
-        transform: translateX(-30%);
+        transform: translateX(-20vw);
     }
     .movie-card{
-        width: 21%;
-        height: 47%;
-        margin: 3px 10px;
+        width: calc(0.287*45vw);
+        height: calc(0.421*45vw);
+        margin: 10px 10px;
         position: relative;
         transition: all 0.5s ease;
         border-radius: 0px;
-        &:hover{
-            transform: scale(1.05);
-            box-shadow: 0px 0px 30px $colorTwo;
-        }
-        &.active{
+        &:hover, &.active{
             transform: scale(1.05);
             box-shadow: 0px 0px 30px $colorTwo;
         }
@@ -37,7 +32,7 @@
                 div{
                     color: $colorLight;
                     font-weight: 300;
-                    font-size: 0.7rem;
+                    font-size: 0.6rem;
                     padding: 5px 5px;
                 }
             }

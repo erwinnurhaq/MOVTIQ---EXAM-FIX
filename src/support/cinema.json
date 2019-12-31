@@ -109,6 +109,16 @@
       "role": "user",
       "cart": [],
       "id": 11
+    },
+    {
+      "first_name": "Ousama",
+      "last_name": "Bin Laden",
+      "email": "ousama@gmail.com",
+      "username": "ousamabinladen",
+      "password": "Ousamabinladen1",
+      "role": "user",
+      "cart": [],
+      "id": 12
     }
   ],
   "transactions": [
@@ -433,6 +443,87 @@
     {
       "id": 8,
       "name": "Ford V Ferrari",
+      "genre": [
+        "Action",
+        "Biography",
+        "Drama"
+      ],
+      "director": "James Mangold",
+      "duration": 152,
+      "synopsis": "2 pemenang Academy Award, Matt Damon dan Christian Bale berperan di FORD v FERRARI, berdasarkan kisah nyata yang luar biasa dari Carroll Shelby (Damon), seorang perancang mobil visioner dari Amerika bersama Ken Miles (Bale), seorang pembalap Inggris yang tak kenal takut. Mereka bersama-sama berjuang menghadapi campur tangan perusahaan, hukum fisika, dan masalah pribadi mereka sendiri ketika membangun mobil balap revolusioner bagi Ford Motor Company untuk menantang mobil balap buatan Enzo Ferrari yang mendomniasi 24 Jam Le Mans di Perancis pada tahun 1966.",
+      "casts": [
+        "Matt Damon",
+        "Christian Bale",
+        "Jon Bernthal"
+      ],
+      "booked": [],
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/1572858859730_287x421.jpg",
+      "bg": "https://c.imge.to/2019/12/16/vMRzF0.jpg",
+      "trailer": "https://www.youtube.com/embed/zyYgDtY2AMY"
+    },
+    {
+      "id": 9,
+      "name": "RTYURTYURTYU",
+      "genre": [
+        "Drama",
+        "Horror"
+      ],
+      "director": "Joel Fadly",
+      "duration": 100,
+      "synopsis": "Naya (Fay Nabila) adalah siswi baru di salah satu SMA di Bandung. Naya memiliki kemampuan yang dikenal sebagai anak indigo. Di sekolah barunya, Naya bertemu dengan Shelly (Gege Elisa) yang memiliki kemampuan sama. Namun, sifat Shelly yang tertutup membuat Naya penasaran. Di saat yang sama, Naya juga dibuat penasaran oleh siaran radio Nightmare Side yang didengarnya dan selalu diikuti oleh mimpi buruk seolah kejadian itu nyata.",
+      "casts": [
+        "Gege Elisa",
+        "Elina Joerg",
+        "Fay Nabila"
+      ],
+      "booked": [],
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/157310760872775_287x421.jpg",
+      "bg": "https://c.imge.to/2019/12/16/vMRQrq.jpg",
+      "trailer": "https://www.youtube.com/embed/Yhea04sWHKc"
+    },
+    {
+      "id": 10,
+      "name": "FGHJFGHJ",
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "director": "Chris Buck",
+      "duration": 103,
+      "synopsis": "Anna, Elsa, Kristoff, Olaf dan Sven pergi meninggalkan Arendelle untuk melakukan perjalanan ke sebuah tempat asing dan penuh keajaiban. Mereka berangkat untuk menemukan asal usul kekuatan Elsa dan juga untuk menyelamatkan kerajaan mereka.",
+      "casts": [
+        "Kristen Bell",
+        "Idina Menzel",
+        "Jonathan Groff"
+      ],
+      "booked": [],
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/157250534676979_287x421.jpg",
+      "bg": "https://c.imge.to/2019/12/16/vMRM4r.jpg",
+      "trailer": "https://www.youtube.com/embed/Zi4LMpSDccc"
+    },
+    {
+      "name": "ASDFASDF",
+      "genre": [
+        "Action"
+      ],
+      "director": "Nick Powell",
+      "duration": 96,
+      "synopsis": "Frank Walsh (Nicolas Cage) adalah seorang spesialis pemburu binatang liar. Hewan-hewan buruannya dikenal langka dan sangat berbahaya. Hasil tangkapan Frank akan dijual kepada penawar tertinggi. Masalah bermula saat kapal yang membawa Frank menuju AS ditumpangi oleh seorang pembunuh bayaran profesional. Dalam perjalanan menuju AS, sang pembunuh berhasil lolos dan melepaskan semua buruan Frank dan membuat kekacauan di dalam kapal.",
+      "casts": [
+        "Nicolas Cage",
+        "Famke Jansenn",
+        "Kevin Durand"
+      ],
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/15743294977296_287x421.jpg",
+      "bg": "https://c.imge.to/2019/12/16/vMRk7x.jpg",
+      "booked": [],
+      "id": 11,
+      "trailer": "https://www.youtube.com/embed/0-thtQJWQBo"
+    },
+    {
+      "id": 12,
+      "name": "QWERQWER",
       "genre": [
         "Action",
         "Biography",

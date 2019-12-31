@@ -1,0 +1,86 @@
+.movie-desc-container{
+    position: fixed;
+    width: 42.5%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    transition: all 0.6s ease;
+    transform: translateX(100%);
+    &.show{
+        transform: translateX(0%);
+    }
+    .movie-desc-content{
+        @include flex(column, center, flex-end);
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0px 10%;
+        .trailer{
+            width: calc(0.42*82vw);
+            height: calc(0.236*82vw);
+            margin-bottom: 10px;
+        }
+        h1{
+            width: 75%;
+            font-size: 2rem;
+            text-align: right;
+            font-weight: 600;
+        }
+        .genre-list{
+            display: flex;
+            padding: 5px 0px;
+            .genre{
+                background-color: $colorDark;
+                color: $colorLight;
+                padding: 0px 10px;
+                font-size: 0.8rem;
+            }
+        }
+        .duration{
+            font-size:0.75rem;
+            padding-bottom: 10px;
+        }
+        .director, .cast-list{
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .synopsis0{
+            font-size:0.8rem;
+            padding: 10px 0px;
+        }
+        .synopsis1{
+            margin-bottom: 15px;
+            width: 75%;
+            height: 15%;
+            min-height: 100px;
+            font-weight: 300;
+            font-size: 0.8rem;
+            text-align: right;
+            overflow-y: auto;
+        }
+        .btn-container{
+            display: flex;
+            button{
+                width: 175px ;
+                height: 50px;
+            }
+            .btn-book{
+                background-color: $colorOne;
+                color: $colorLight;
+                &:hover{
+                    background-color: $colorTwo;
+                    color: $colorDark;
+                }
+            }
+        }
+    }
+    .white-side2{
+        position: absolute;
+        z-index: -2;
+        width: 50vw;
+        height: 100%;
+        border-bottom: 100vh solid $colorLight;
+        border-left: 10vw solid transparent;
+    }
+}

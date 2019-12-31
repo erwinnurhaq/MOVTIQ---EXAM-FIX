@@ -3,7 +3,7 @@ import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Table, Table
 
 
 
-function ModalDetailTicket({ show, setShow, myTransactions, selectedRow, formatter, setSelectedRow, alf }) {
+function ModalDetailTicket({ show, setShow, myTransactions, selectedRow, formatter, alf }) {
 
     //table material
     const columns = [
@@ -15,7 +15,7 @@ function ModalDetailTicket({ show, setShow, myTransactions, selectedRow, formatt
     ];
 
     if (selectedRow === null) {
-        return <h1>Loading</h1>
+        return null;
     } else {
         return (
             <Dialog open={show} onClose={() => setShow(!show)} aria-labelledby="form-dialog-title" fullWidth={true} maxWidth="sm">

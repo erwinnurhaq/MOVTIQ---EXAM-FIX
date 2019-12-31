@@ -9,13 +9,15 @@ import { fetchMovies, getLocal } from './redux/allAction';
 //components
 import { ProtectedRoute } from './ProtectedRoute';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
-import WarningDev from './pages/WarningDev';
 import WarningPage from './pages/WarningPage';
 import Registration from './pages/Registration';
 import MovieManagement from './pages/MovieManagement';
 import TransactionHistory from './pages/TransactionHistory';
 import Movies from './pages/Movies';
+import Cinemas from './pages/Cinemas';
+import Membership from './pages/Membership';
 import SeatReservation from './pages/SeatReservation';
 import UserCart from './pages/UserCart';
 import UserTickets from './pages/UserTickets';
@@ -31,8 +33,8 @@ function App() {
 
   return (
     <Router>
-      <div className="App-container">
-        <Navbar />
+      <Navbar />
+      <div className="app-container">
         <div className="content-container">
           <Switch>
             <Route exact path="/" component={Home} />
@@ -44,9 +46,11 @@ function App() {
             <Route path="/usercart" component={UserCart} />
             <Route path="/usertickets" component={UserTickets} />
             <Route path="/profile" component={Profile} />
-            <Route path='/warningdev' component={WarningDev} />
+            <Route path='/cinemas' component={Cinemas} />
+            <Route path='/membership' component={Membership} />
             <Route path='*' component={WarningPage} />
           </Switch>
+          <Footer />
         </div>
       </div>
     </Router >

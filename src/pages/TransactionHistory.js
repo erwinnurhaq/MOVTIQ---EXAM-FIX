@@ -2,14 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import { API_URL } from '../support/API_URL';
 import ListAltIcon from '@material-ui/icons/ListAlt';
-import '../styles/App.scss';
 
 //redux
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchAllTransactions, fetchMovies } from '../redux/allAction';
 
 //components
-import Footer from '../components/Footer';
 import ModalRemove from '../components/ModalRemove';
 import TableTransactionHistory from '../components/TableTransactionHistory';
 
@@ -90,7 +88,6 @@ function TransactionHistory(props) {
                     text={`Are your sure want to remove this transaction?`}
                 />
 
-                <Footer />
             </div>
         )
     }

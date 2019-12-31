@@ -24,3 +24,11 @@ a {
 button{
   border-radius: 0px !important;
 }
+
+.app-container{
+  display: grid;
+  .content-container{
+    min-height: 100vh;
+    position: relative;
+  }
+}

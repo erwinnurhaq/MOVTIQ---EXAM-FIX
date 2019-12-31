@@ -11,7 +11,6 @@ import { loginAct } from '../redux/allAction';
 //for fix gsap bug
 const C = CSSPlugin;
 
-
 const LoginComponent = (props) => {
 
     const dispatch = useDispatch();

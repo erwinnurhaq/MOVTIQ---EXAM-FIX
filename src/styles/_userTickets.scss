@@ -1,96 +1,85 @@
 .user-tickets-container{
-    height: 85vh;
-    width: 100%;
-    .user-tickets-wrapper{
-        padding: 0px 5%;
-        height: 100%;
-        margin: 7.5vh 0px;
-        overflow-y: auto;
-        @include flex(row, center, flex-start);
-        // display: grid;
-        // grid-template-columns: 1fr 1fr;
-        h1{
-            font-size: 1.8rem;
-            color: $colorTwo;
-            padding: 10px 20px;
-            font-weight: 400;
-        }
-        .active-tickets-container{
-            background-color: rgba(255, 255, 255, 0.1);
-            margin-right: 5px;
-            min-width: 50%;
-            // grid-column: 1/2;
-            @include flex(column, flex-start, space-between);
-            .active-tickets{
-                @include flex(row, space-between, center);
-                border-top: 1px solid $colorLight;
-                padding: 10px 0px 20px 0px;
-                h1{
-                    font-size: 0.9rem;
-                }
-                p{
-                    padding: 5px 20px;
-                    font-size: 0.8rem;
-                    color: $colorLight;
-                }
-                .button-container{
-                    width: 100%;
-                    @include flex(row, center, center);
-                    padding: 10px 20px 10px 20px;
-                    flex-wrap: wrap;
-                    button{
-                        min-width: 50%;
-                        height: 80px;
-                        padding: 0px;
-                        margin: 5px;
-                        font-size: 0.7rem;
-                        position: relative;
-                        background-color: $colorLight;
-                        border-radius: 10px !important;
-                        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-                        span{
-                            text-align: center;
-                        }
-                    }
-                }
-                
+    margin: 7.5vh 0px;
+    padding: 0px 5%;
+    @include flex(row, center, flex-start);
+    h1{
+        font-size: 1.8rem;
+        color: $colorTwo;
+        padding: 10px 20px;
+        font-weight: 400;
+    }
+    .active-tickets-container{
+        background-color: rgba(255, 255, 255, 0.1);
+        min-width: 50%;
+        @include flex(column, flex-start, space-between);
+        .active-tickets{
+            @include flex(row, space-between, center);
+            border-top: 1px solid $colorLight;
+            padding: 10px 0px 20px 0px;
+            h1{
+                font-size: 0.9rem;
             }
-        }
-        .cart-container{
-            background-color: rgba(255, 255, 255, 0.1);
-            margin-left: 5px;
-            min-width: 50%;
-            // grid-column: 2/3;
-            @include flex(column, flex-start, space-between);
-            table{
-                background-color: #fff;
-                width: 100%;
-                th, tr, td{
-                    font-size: 0.8rem;
-                }
-                .movie-img{
-                    max-height: 80px;
-                }
-                .pagination{
-                    font-size: 0.8rem;
-                }
-            }
-            .btn-checkout{
-                height: 60px;
+            p{
+                padding: 5px 20px;
+                font-size: 0.8rem;
                 color: $colorLight;
-                background-color: $colorOne;
-                transition: all 0.5s ease;
-                @include flex(row, space-between, center);
-                &:hover{
-                    color: $colorDark;
-                    background-color: $colorTwo;
-                }
-                div{
-                    @include flex(row, center, center);
-                    svg{
-                        margin-left: 10px;
-                        transform: translateY(-1px);
+            }
+            .button-container{
+                width: 100%;
+                @include flex(row, center, center);
+                padding: 10px 20px 10px 20px;
+                flex-wrap: wrap;
+                button{
+                    min-width: 50%;
+                    height: 80px;
+                    padding: 0px;
+                    margin: 5px;
+                    font-size: 0.7rem;
+                    position: relative;
+                    background-color: $colorLight;
+                    border-radius: 10px !important;
+                    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+                    span{
+                        text-align: center;
                     }
+                }
+            }
+            
+        }
+    }
+    .cart-container{
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-left: 5px;
+        min-width: 50%;
+        @include flex(column, flex-start, space-between);
+        table{
+            background-color: #fff;
+            width: 100%;
+            th, tr, td{
+                font-size: 0.8rem;
+            }
+            .movie-img{
+                max-height: 80px;
+            }
+            .pagination{
+                font-size: 0.8rem;
+            }
+        }
+        .btn-checkout{
+            height: 60px;
+            color: $colorLight;
+            background-color: $colorOne;
+            transition: all 0.5s ease;
+            @include flex(row, space-between, center);
+            &:hover{
+                color: $colorDark;
+                background-color: $colorTwo;
+            }
+            div{
+                @include flex(row, center, center);
+                svg{
+                    margin-left: 10px;
+                    transform: translateY(-1px);
                 }
             }
         }

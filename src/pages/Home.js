@@ -1,11 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/App.scss';
 
 //components
 import MovieMarquee from '../components/MovieMarquee';
-import Footer from '../components/Footer';
-
 
 
 function Home() {
@@ -26,7 +23,6 @@ function Home() {
                     <MovieMarquee />
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

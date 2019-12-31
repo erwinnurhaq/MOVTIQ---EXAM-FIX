@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
 import TheatersIcon from '@material-ui/icons/Theaters';
-import '../styles/App.scss';
 
 //redux
 import { connect } from 'react-redux';
 import { deleteMovie, addMovie, editMovie } from '../redux/allAction';
 
 //components
-import Footer from '../components/Footer';
 import ModalAdd from '../components/ModalAdd';
 import ModalRemove from '../components/ModalRemove';
 import TableMovieAdm from '../components/TableMovieAdm';
@@ -61,7 +59,6 @@ function MovieManagement(props) {
                     text={`Are your sure want to remove this movie?`}
                 />
 
-                <Footer />
             </div>
         )
     }

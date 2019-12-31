@@ -6,7 +6,7 @@
     position: relative;
     overflow: hidden;
     .white-side{
-        width: 55%;
+        width: 52.5%;
         height: 100%;
         position: absolute;
         z-index: 1;
@@ -40,6 +40,7 @@
                     font-size: 115px;
                     font-weight: 700;
                     color: $colorDark;
+                    text-shadow: 0px 0px 10px $colorLight;
                 }
             }
             .text2{

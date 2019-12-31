@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Card, CardActionArea, CardContent, CardMedia } from '@material-ui/core';
+import { CardActionArea, CardContent, CardMedia } from '@material-ui/core';
 
 //redux
 import { useSelector } from 'react-redux';
@@ -20,7 +20,7 @@ function MovieMarquee() {
     const classes = useStyles();
 
     const moviesMap = () => movies.map(movie => (
-        <Card
+        <div
             className="movie-card"
             id={movie.id}
             key={movie.id}
@@ -29,7 +29,7 @@ function MovieMarquee() {
                 <CardMedia
                     className={classes.media}
                     image={movie.image}
-                    title="Contemplative Reptile"
+                    title={movie.name}
                 />
                 <CardContent className='genre-container'>
                     {movie.genre.map((g, index) => (
@@ -37,7 +37,7 @@ function MovieMarquee() {
                     ))}
                 </CardContent>
             </CardActionArea>
-        </Card>
+        </div>
     ))
 
 

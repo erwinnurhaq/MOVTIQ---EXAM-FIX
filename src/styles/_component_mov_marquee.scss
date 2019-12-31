@@ -10,13 +10,12 @@
         @include flex(row, center, center);
         white-space: nowrap;
         will-change: transform;
-        animation: marquee 20s linear infinite;
+        animation: marquee 50s linear infinite;
+        border-top: 10px double $colorLight;
+        border-bottom: 10px double $colorLight;
         .movie-card{
-            border-radius: 0px;
-            border-left: 1px solid $colorLight;
-            border-top: 10px solid $colorLight;
-            border-bottom: 10px solid $colorLight;
-            // margin: 10px;
+            overflow: hidden;
+            border-left: 1px dashed $colorLight;
             .genre-container{
                 @include flex(row, center, center);
                 background-color:$colorDark;

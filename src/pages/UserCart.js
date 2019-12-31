@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import { API_URL } from '../support/API_URL';
-import { useParams, Redirect } from 'react-router-dom';
 
 //redux
 import { useSelector, useDispatch } from 'react-redux';
 import { getLocal, userTransaction } from '../redux/allAction';
 //components
-import Footer from '../components/Footer';
 import TableCart from '../components/TableCart';
 import ModalRemove from '../components/ModalRemove';
 import ModalWarning from '../components/ModalWarning';
@@ -129,7 +127,6 @@ function UserCart() {
                         />
                     </div>
                 </div>
-                <Footer />
                 <ModalRemove
                     action={removeCartHandler}
                     modalRemove={modalRemove}
